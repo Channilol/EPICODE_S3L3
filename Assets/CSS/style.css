@@ -13,20 +13,34 @@ body {
     background-color: aquamarine;
 }
 
+p {
+    margin: 0;
+    padding: 0 0 0 0.5vw;
+}
+
 .divList {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 5vh;
     border: 1px solid rgb(50, 158, 95);
     background-color: lightgreen;
     border-radius: 4px;
-    padding: 1vh 0 1vh 0.5vw;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 0 1vh 0;
+    margin: 1vh 0;
 }
 
-li img {
+img {
     width: 20px;
-    padding-right: 5px;
+}
+
+#toDoList button {
+    padding: 4px 4px 1px 4px;
+    margin: 0 0.5vw 0 0;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(216, 84, 84);
+    cursor: pointer;
 }
 
 /* CLASSES/ID */
@@ -76,4 +90,8 @@ li img {
     background-color: lightgreen;
     display: flex;
     align-items: center;
+}
+
+.pSbarrato {
+    text-decoration: line-through;
 }

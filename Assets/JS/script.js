@@ -45,10 +45,9 @@ const createToDo = () => {
 bottoneCrea.addEventListener('click', createToDo) */
 
 document.querySelector('button').onclick = () => {
-    if(document.querySelectorAll('#addTask').values.length === '') {
-        alert("Devi inserisci una task")
+    if(document.querySelector('#addTask').value === '') {
+        alert("Devi inserireuna task")
     }
-
     else {
         document.querySelector('#toDoList').innerHTML += `
         <div class="divList">
@@ -63,8 +62,18 @@ document.querySelector('button').onclick = () => {
         for (let i = 0; i < currentTasks.length; i++) {
             currentTasks[i].onclick = function() {
                 this.parentNode.remove();
+            }
+        }
 
+        let checkBox = document.querySelectorAll('.divList')
+        for (let i = 0; i < checkBox.length;i++) {
+            checkBox[i].onclick = function() {
+                let testoDiv = document.getElementsByTagName('div p')
+                testoDiv.className('pSbarrato')
             }
         }
     }
+    const inputTask = document.querySelector('#addTask')
+    inputTask.value = ''
 }
+

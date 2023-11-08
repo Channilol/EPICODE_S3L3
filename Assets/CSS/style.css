@@ -1,0 +1,79 @@
+/* GENERIC */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.divList {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(50, 158, 95);
+    background-color: lightgreen;
+    border-radius: 4px;
+    padding: 1vh 0 1vh 0.5vw;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 1vh 0;
+}
+
+li img {
+    width: 20px;
+    padding-right: 5px;
+}
+
+/* CLASSES/ID */
+
+.wrapper  {
+    background-color: azure;
+    padding: 2vh 1vw 2vh 1vw;
+    border-radius: 8px;
+}
+
+.addTaskDiv {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#addTask {
+    width: 75%;
+    height: 4vh;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 0 0 0.5vw;
+}
+
+#buttonCrea {
+    width: 20%;
+    background-color: coral;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#buttonCrea:hover {
+    cursor: pointer;
+    background-color: chocolate;
+}
+
+.newDivClass {
+    width: 100%;
+    height: 4.5vh;
+    margin: 2vh 0 0 0;
+    padding: 0 0 0 0.5vw;
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+}
